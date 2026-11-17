@@ -30,7 +30,7 @@ public class SpawnSetup {
 		BlockPos sp = w.getSpawnPoint();
 		int cx = sp.getX();
 		int cz = sp.getZ();
-		w.getChunkFromBlockCoords(new BlockPos(cx, 64, cz));
+		w.getChunk(new BlockPos(cx, 64, cz));
 		int gy = groundY(w, cx, cz);
 		if (gy < 0) {
 			gy = Math.max(sp.getY(), 64);
