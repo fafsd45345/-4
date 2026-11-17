@@ -19,7 +19,7 @@ public class SpawnSetup {
 			IBlockState s = w.getBlockState(new BlockPos(x, y, z));
 			Material m = s.getMaterial();
 			if (m == Material.GROUND || m == Material.GRASS || m == Material.ROCK || m == Material.SAND || m == Material.CLAY || m == Material.SNOW
-					|| m == Material.CRAFTED_SNOW || m == Material.ICE || m == Material.PACK_ICE) {
+					|| m == Material.CRAFTED_SNOW || m == Material.ICE || m == Material.PACKED_ICE) {
 				return y;
 			}
 		}
